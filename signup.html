@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Login System">
+    <meta name="description" content=" Smart Login System!">
+
+    <title>Smart Register System</title>
+
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class=" card-section card border-0 rounded-0 bg-transparent">
+                <div class="card-body my-3">
+                    <h1 class="text-center">Smart Register System</h1>
+                    <form id="registerForm" class="p-4">
+                        <div class="form-group">
+                            <input type="text" class="form-control mb-0  bg-transparent rounded-1" name="userName" id="userName"
+                            oninput="validateUserInput(this)"  placeholder="Enter your name">
+                            <span class="text-danger error-msg d-none mb-2">Please enter name min (3) character starting with Capital latter </span>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control mb-0 bg-transparent rounded-1" name="userEmail" id="userEmail"
+                            oninput="validateUserInput(this)"  placeholder="Enter your email">
+                            <span class="text-danger error-msg d-none mb-2">Please enter a vaild email address Ex:(test@gmail.com) </span>
+
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control mb-0 bg-transparent rounded-1" name="userPassword" id="userPassword"
+                            oninput="validateUserInput(this)"  placeholder="Enter your password">
+                            <span class="text-danger error-msg d-none mb-2">Password must contian capital letters & small letters & numbers & symbols and at least 8 char </span>
+
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-info  rounded-1 mt-3"> Sign up</button>
+                        </div>
+                        <div class="text-center text-white">
+
+                            <p class="signin pt-2">You have an account? <a class="link text-white "
+                                    href="./index.html">Signin</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/register.js"></script>
+</body>
+
+</html>
